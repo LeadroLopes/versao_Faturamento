@@ -1,0 +1,48 @@
+# CRIANDO MEU BANCO
+
+CREATE DATABASE seguimentos_cadastrados
+
+
+
+# CRIANDO MINHA TABELA DE ESTOQUE 
+
+USE seguimentos_cadastrados
+CREATE TABLE seguimento_venda(
+id  INT IDENTITY(1,1),
+seguimento VARCHAR (50),
+tema VARCHAR (50),
+descricao VARCHAR (50),
+tamanho VARCHAR (10),
+quantidade INT,
+qtdd_minima INT,
+valor NUMERIC(18,2),
+data_venda date ,
+cliente VARCHAR(50),
+seguimento_venda VARCHAR(50) ,
+tema_venda VARCHAR(50),
+descricao_venda VARCHAR	(50),
+tamanho_venda VARCHAR(50),
+quantidade_venda INT,
+valor_venda NUMERIC(18,2),
+total_venda AS (quantidade_venda * valor_venda))
+
+
+#CRIANDO MINHA TABELA PLANILHA
+
+
+id  INT IDENTITY(1,1),
+data_venda date ,
+cliente VARCHAR(50),
+seguimento VARCHAR(50) ,
+tema VARCHAR(50),
+descricao VARCHAR	(50),
+tamanho VARCHAR(50),
+quantidade INT,
+valor NUMERIC(18,2),
+total AS (quantidade * ))
+
+
+
+
+
+
